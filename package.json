@@ -1,0 +1,38 @@
+{
+  "name": "server-api-nodejs-webpack",
+  "version": "1.0.0",
+  "description": "Server API with ExpressJS Webpack Jest",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack && npm run start",
+    "start:dev": "NODE_ENV=development webpack",
+    "run:dev": "NODE_ENV=development nodemon build/index.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Duong Nguyen <duongnv.05@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-errors": "^1.7.3",
+    "nodemon": "^2.0.1",
+    "ts-loader": "^6.2.1",
+    "ts-node": "^8.5.4",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/http-errors": "^1.6.3",
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.14",
+    "@types/supertest": "^2.0.8",
+    "jest": "^24.9.0",
+    "supertest": "^4.0.2",
+    "ts-jest": "^24.2.0",
+    "webpack-node-externals": "^1.7.2",
+    "webpack-shell-plugin": "^0.5.0"
+  }
+}
