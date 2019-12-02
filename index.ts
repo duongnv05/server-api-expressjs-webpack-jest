@@ -7,7 +7,7 @@ import controllers from './controllers';
 let app = express.default();
 
 const {
-    PORT = 3000
+    PORT = 4500
 } = process.env;
 
 app.use(controllers);
