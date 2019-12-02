@@ -1,5 +1,5 @@
 import * as express from 'express';
-import { Request, Response, NextFunction } from 'express';;
+import { Request, Response, NextFunction } from 'express';
 import * as createError from 'http-errors';
 
 import controllers from './controllers';
@@ -10,17 +10,10 @@ const {
     PORT = 3000
 } = process.env;
 
-// app.get('/', (req: Request, res: Response) => {
-//     res.send({
-//         message: 'Hello world! hot load!'
-//     });
-// });
-
-// app.use(() => import('./controllers'));
 app.use(controllers);
 
 app.use((req: Request, res: Response, next: NextFunction) => {
-    // next(createError(createError.c));
+    next(createError.default(createError));
 });
 
 if(require.main === module) {

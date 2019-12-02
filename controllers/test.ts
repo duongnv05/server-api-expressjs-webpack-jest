@@ -21,5 +21,4 @@ class TestController extends RootController {
     }
 }
 
-// module.exports = TestController.getInstance();
 export default TestController.getInstance();
